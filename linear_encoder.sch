@@ -216,7 +216,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 1750 6200 850 
 Wire Wire Line
-	6200 850  4800 850 
+	6200 850  5500 850 
 Connection ~ 4800 850 
 Text Label 5550 2350 0    50   ~ 0
 IO5V
@@ -344,14 +344,68 @@ Wire Wire Line
 	2200 1550 2200 1450
 Connection ~ 2200 1450
 $Comp
-L Graphic:Logo_Open_Hardware_Large #LOGO?
+L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 60834FBE
 P 1500 3600
-F 0 "#LOGO?" H 1500 4100 50  0001 C CNN
+F 0 "#LOGO1" H 1500 4100 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Large" H 1500 3200 50  0001 C CNN
 F 2 "" H 1500 3600 50  0001 C CNN
 F 3 "~" H 1500 3600 50  0001 C CNN
 	1    1500 3600
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C1
+U 1 1 6083C59C
+P 3900 1000
+F 0 "C1" H 4015 1046 50  0000 L CNN
+F 1 "100n" H 4015 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3938 850 50  0001 C CNN
+F 3 "~" H 3900 1000 50  0001 C CNN
+	1    3900 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 6083F647
+P 3900 1250
+F 0 "#PWR0111" H 3900 1000 50  0001 C CNN
+F 1 "GND" H 3905 1077 50  0000 C CNN
+F 2 "" H 3900 1250 50  0001 C CNN
+F 3 "" H 3900 1250 50  0001 C CNN
+	1    3900 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1150 3900 1250
+Wire Wire Line
+	3900 850  4250 850 
+Connection ~ 4250 850 
+$Comp
+L Device:C C2
+U 1 1 60844111
+P 5500 1000
+F 0 "C2" H 5615 1046 50  0000 L CNN
+F 1 "100n" H 5615 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5538 850 50  0001 C CNN
+F 3 "~" H 5500 1000 50  0001 C CNN
+	1    5500 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 850 
+Wire Wire Line
+	5500 850  4800 850 
+$Comp
+L power:GND #PWR0112
+U 1 1 608447A3
+P 5500 1250
+F 0 "#PWR0112" H 5500 1000 50  0001 C CNN
+F 1 "GND" H 5505 1077 50  0000 C CNN
+F 2 "" H 5500 1250 50  0001 C CNN
+F 3 "" H 5500 1250 50  0001 C CNN
+	1    5500 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1150 5500 1250
 $EndSCHEMATC
